@@ -18,7 +18,7 @@
 -----------------------------------------------------------------------------------------------------------------------------
 
 ## BLACKEYE v1.0
-### Coded by: @thelinuxchoice (https://github.com/thelinuxchoice/blackeye)
+### Coded by: [@thelinuxchoice](https://github.com/EricksonAtHome) https://github.com/EricksonAtHome/blackeye
 ### Upgraded by: @cybsam (https://github.com/cybsam/blackeye)
 
 #### Credits (Copyright)
