@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Your Financial Institution</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 80%;
+            max-width: 1200px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .bank-selection {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .bank-logos {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+            gap: 10px;
+            width: 70%;
+        }
+
+        .bank-logos img {
+            width: 100%;
+            height: auto;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            padding: 10px;
+        }
+
+        .search-container {
+            display: flex;
+            align-items: center;
+            width: 25%;
+        }
+
+        .search-container input {
+            width: 80%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px 0 0 4px;
+        }
+
+        .search-btn {
+            width: 20%;
+            padding: 10px;
+            background-color: #ffcc00;
+            border: none;
+            border-radius: 0 4px 4px 0;
+            cursor: pointer;
+        }
+
+        .alternative-selection {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .alternative-selection p {
+            font-size: 18px;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .institution-form {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .form-group select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        .deposit-btn {
+            width: 100%;
+            padding: 10px;
+            background-color: #ffcc00;
+            color: #333;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Select Your Financial Institution</h1>
+        
+        <div class="bank-selection">
+            <div class="bank-logos">
+                <img src="images/atb-financial.png" alt="ATB Financial">
+                <img src="images/bmo.png" alt="BMO">
+                <img src="images/cibc.png" alt="CIBC">
+                <img src="images/desjardins.png" alt="Desjardins">
+                <img src="images/hsbc.png" alt="HSBC">
+                <img src="images/laurentian-bank.png" alt="Laurentian Bank">
+                <img src="images/manulife-bank.png" alt="Manulife Bank">
+                <img src="images/meridian.png" alt="Meridian">
+                <img src="images/motussbank.png" alt="Motusbank">
+                <img src="images/national-bank.png" alt="National Bank">
+                <img src="images/rbc.png" alt="RBC">
+                <img src="images/scotiabank.png" alt="Scotiabank">
+                <img src="images/simplii.png" alt="Simplii Financial">
+                <img src="images/tangerine.png" alt="Tangerine">
+                <img src="images/td.png" alt="TD">
+            </div>
+            <div class="search-container">
+                <input type="text" placeholder="Search">
+                <button class="search-btn"><img src="images/search-icon.png" alt="Search"></button>
+            </div>
+        </div>
+
+        <div class="alternative-selection">
+            <p>OR</p>
+            <form class="institution-form">
+                <div class="form-group">
+                    <label for="institution">Select Your Financial Institution</label>
+                    <select id="institution">
+                        <option value="">Select Institution</option>
+                        <!-- Add options here -->
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="province">Select Province or Territory</label>
+                    <select id="province">
+                        <option value="bc">British Columbia</option>
+                        <!-- Add more options here -->
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="creditUnion">Select Credit Union</label>
+                    <select id="creditUnion">
+                        <option value="">Select Credit Union</option>
+                        <option value="coastCapital">Coast Capital Savings Federal Credit Union</option>
+                        <!-- Add more options here -->
+                    </select>
+                </div>
+                <button type="submit" class="deposit-btn">Deposit</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
